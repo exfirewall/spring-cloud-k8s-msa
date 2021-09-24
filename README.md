@@ -27,4 +27,9 @@ Service Mesh의 주요 기능
 |장점|Kubernetes|단점|
 |------|---|---|
 |마이크로서비스의 전체 라이프사이클을 커버한다.||제네릭한 플랫폼이다.|
-|제네|||
+|컨테이너 기반의 polyglot||DevOps 친화적이다.|
+
+![123](https://3.bp.blogspot.com/-JgZZTQGJjn4/WEUx-2_Xc2I/AAAAAAAAG6I/drR--mpXdf4LnTMzlsoAg3bG4cFKfqbZgCLcB/s1600/spring%2Bcloud%2Band%2Bkubernetes%2Bmixed%2B-%2BPage%2B1%25281%2529.png)
+
+예를 들어, Spring Boot는 상용화 수준의 단독 실행가능한 jar 애플리케이션을 제공하지만, Docker 및 쿠버네티스의 선언적인 배포와 자원 용량 설정등의 기능과 함께 어우러졌을 때 더 큰 효과를 발휘한다. 또한 Spring Cloud의 Hystrix와 같은 탄력적이고, fault tolerant한 애플리케이션 라이브러리를 갖고 있지만, 쿠버네티스의 Health Checks, 프로세스 재시작 기능, 자동 스케일링 기능들과 결합하면 강력한 msa 를 구현할 수 있다.
+
