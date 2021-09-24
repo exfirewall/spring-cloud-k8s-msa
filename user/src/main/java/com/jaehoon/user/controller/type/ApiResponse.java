@@ -1,7 +1,6 @@
 package com.jaehoon.user.controller.type;
 
 import com.jaehoon.user.model.type.StatusCode;
-import com.sun.tools.javac.util.DefinedBy;
 import lombok.Getter;
 import lombok.Setter;
 
