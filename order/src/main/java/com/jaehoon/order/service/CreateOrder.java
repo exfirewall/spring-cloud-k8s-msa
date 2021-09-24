@@ -1,5 +1,6 @@
 package com.jaehoon.order.service;
 
+import com.jaehoon.order.model.domain.Order;
 import com.jaehoon.order.model.value.UserDto;
 import com.jaehoon.order.model.value.UserResponse;
 import com.jaehoon.order.repository.UserRepository;
@@ -10,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.net.URI;
 import java.util.Objects;
+import java.util.Random;
 
 @Service
 public class CreateOrder implements OrderSerivce{
@@ -19,8 +21,25 @@ public class CreateOrder implements OrderSerivce{
         this.userRepository = userRepository;
     }
 
-    URI uri = OrderUtils.getUri(userRepository.getUrl());
-    UserResponse userResponse = userRepository.getOrdererInfo(uri, UserResponse.class);
-    UserDto userDto = new UserDto();
+    public Order loadDomain() {
 
+        Order order = new Order();
+
+        long seed = System.currentTimeMillis();
+        Random random = new Random(seed);
+        order.setId(random.nextInt());
+
+        // 주문자 세팅
+        int ordMemNo = 1234;
+        URI uri = OrderUtils.getUri(userRepository.getUrl() + "/" + ordMemNo);
+        UserResponse userResponse = userRepository.getOrdererInfo(uri, UserResponse.class);
+        order.setOrderer(userResponse.getUser());
+
+        // 상품 세팅
+
+
+        // 주문 리턴
+
+        return order;
+    }
 }
