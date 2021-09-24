@@ -1,5 +1,5 @@
 # 시작 전 정리하기
-msa가 무엇이고 msa 구축을 위해 spring cloud와 kubernates가 왜 필요할까? <br>
+msa가 무엇이고 msa 구축을 위해 spring cloud와 kubernetes가 왜 필요할까? <br>
 모놀리식 아키텍처는 빠르고 다양하게 변하는 고객들의 요구조건에 맞추어 확정성 및 성능을 위한 신속한 대처가 어렵다. 보다 유연하고 작고 독립적으로 분산된 서비스들로 나눠야할 필요성이 증가했고 이를 위해 msa가 도입되었다. 
 msa를 도입했을 때의 장점
 1. 특정 서비스만 집중할 수 있고, 코드 규모가 작아 효율적인 유지보수가 가능
@@ -14,5 +14,17 @@ Service Mesh의 주요 기능
 * Load Balancing
 * API Gateway
 * Resilience & Fault Tolerance
-등이 있다.
+* Centralized Metrics
+* Service Disocovery
 
+이러한 Service Mesh를 제공하는 플랫폼이 Spring Cloud와 Kubernetes이다. 이 두 플랫폼은 각자 장단점이 있지만 서로 상호보완적이라 할 수 있다.
+
+|장점|Spring Cloud|단점|
+|------|---|---|
+|개발자 친화적이다.||자바플랫폼에 한정적이다.|
+|라이브러리들이 서로 잘 통합되어 있다.||마이크로서비스의 전체 라이프사이클을 커버하지 못한다.|
+
+|장점|Kubernetes|단점|
+|------|---|---|
+|마이크로서비스의 전체 라이프사이클을 커버한다.||제네릭한 플랫폼이다.|
+|제네|||
