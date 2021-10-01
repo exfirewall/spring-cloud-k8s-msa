@@ -5,19 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e22c4fe-da90-45f8-a04a-e5dc2f385360" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/config/RestTemplateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/controller/type/RestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/controller/type/RestResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/value/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/value/UserResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/service/CreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/service/CreateOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/java/com/jaehoon/user/controller/type/ApiResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/java/com/jaehoon/user/controller/type/ApiResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,19 +70,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.OrderApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="order" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jaehoon.order.OrderApplication" />
@@ -124,7 +101,9 @@
       <option name="presentableId" value="Default" />
       <updated>1632381149506</updated>
       <workItem from="1632381150943" duration="3846000" />
-      <workItem from="1632462492731" duration="10528000" />
+      <workItem from="1632462492731" duration="11082000" />
+      <workItem from="1632896762819" duration="746000" />
+      <workItem from="1633069946051" duration="803000" />
     </task>
     <servers />
   </component>

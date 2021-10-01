@@ -8,10 +8,7 @@ import com.jaehoon.order.service.CreateOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
@@ -26,6 +23,15 @@ public class OrderController {
         Order order = createOrder.loadDomain();
         log.debug("order check" + order.getOrderer());
         restResponse.setResult(order);
+
+        return restResponse;
+    }
+
+    @GetMapping("order")
+    public RestResponse<Order> getOrder(){
+        RestResponse<Order> restResponse = new RestResponse<>(StatusCode.OK);
+        Order order = createOrder.loadDomain();
+        log.debug("order check" + order.getOrderer());
 
         return restResponse;
     }
