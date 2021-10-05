@@ -3,14 +3,8 @@ o
 ?order/src/main/java/com/jaehoon/order/service/OrderSerivce.java,4\1\4199fb651eb0237556dcafc47f7bf30319086324
 k
 ;order/src/main/java/com/jaehoon/order/OrderApplication.java,b\c\bc2b75b94d0cb2b161353d966719bcffcdb8f4f5
-k
-;order/src/main/java/com/jaehoon/order/utils/OrderUtils.java,0\f\0f321362a6d6b8e23c718406d5ac1a48a7b525ec
-n
->user/src/main/java/com/jaehoon/user/model/type/StatusCode.java,c\4\c4a5f22520000f512e31fe985e89b5f08d7871eb
 h
 8user/src/main/java/com/jaehoon/user/UserApplication.java,d\c\dcd488ee9164757207ecb4e63421c58c5a40b2bc
-t
-Duser/src/main/java/com/jaehoon/user/controller/type/ApiResponse.java,7\e\7e27b9e99eb25a2ee361bbf10aa146706b566463
 p
 @order/src/main/java/com/jaehoon/order/model/type/StatusCode.java,b\9\b956968def5a9cc664023fd7d6beb3a0b578a0c2
 y

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
-@RequestMapping(value = "/order/", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/orders", produces = MediaType.APPLICATION_JSON_VALUE)
 public class OrderController {
     @Autowired
     private CreateOrder createOrder;
@@ -27,7 +27,7 @@ public class OrderController {
         return restResponse;
     }
 
-    @GetMapping("order")
+    @GetMapping("/order")
     public RestResponse<Order> getOrder(){
         RestResponse<Order> restResponse = new RestResponse<>(StatusCode.OK);
         Order order = createOrder.loadDomain();
