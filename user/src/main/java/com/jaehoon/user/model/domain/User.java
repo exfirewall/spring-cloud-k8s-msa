@@ -6,4 +6,5 @@ import lombok.Data;
 public class User {
     private Long memNo;
     private String memNm;
+    private String location;
 }
