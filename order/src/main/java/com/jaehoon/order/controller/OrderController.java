@@ -7,6 +7,7 @@ import com.jaehoon.order.model.type.StatusCode;
 import com.jaehoon.order.service.CreateOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -34,5 +35,13 @@ public class OrderController {
         log.debug("order check" + order.getOrderer());
 
         return restResponse;
+    }
+
+    @Value("${custom.check-text}")
+    private String test;
+
+    @GetMapping("/read")
+    public String readTest(){
+        return test;
     }
 }
