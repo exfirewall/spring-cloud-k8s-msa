@@ -1,10 +1,6 @@
 
-k
-;order/src/main/java/com/jaehoon/order/OrderApplication.java,b\c\bc2b75b94d0cb2b161353d966719bcffcdb8f4f5
 h
 8user/src/main/java/com/jaehoon/user/UserApplication.java,d\c\dcd488ee9164757207ecb4e63421c58c5a40b2bc
-p
-@order/src/main/java/com/jaehoon/order/model/type/StatusCode.java,b\9\b956968def5a9cc664023fd7d6beb3a0b578a0c2
 w
 Gorder/src/main/java/com/jaehoon/order/repository/ProductRepository.java,3\2\322a6d223cc5bc32ad9c149962a08e0674694cf8
 s
