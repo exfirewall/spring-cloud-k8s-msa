@@ -4,12 +4,17 @@ import com.jaehoon.order.controller.type.RestResponse;
 import com.jaehoon.order.model.domain.Order;
 import com.jaehoon.order.model.param.CreateOrderRequest;
 import com.jaehoon.order.model.type.StatusCode;
+import com.jaehoon.order.model.value.OrderResponse;
+import com.jaehoon.order.model.value.OrdersResponse;
 import com.jaehoon.order.service.CreateOrder;
+import com.jaehoon.order.service.GetOrder;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @Slf4j
 @RestController
@@ -18,23 +23,39 @@ public class OrderController {
     @Autowired
     private CreateOrder createOrder;
 
-    @PostMapping("/new")
-    public RestResponse<Order> createOrder(@RequestBody CreateOrderRequest bodyRequest){
-        RestResponse<Order> restResponse = new RestResponse<>(StatusCode.CREATED);
-        Order order = createOrder.loadDomain();
-        log.debug("order check" + order.getOrderer());
-        restResponse.setResult(order);
+    @Autowired
+    private GetOrder getOrder;
 
-        return restResponse;
-    }
+//    @PostMapping("/new")
+//    public RestResponse<Order> createOrder(@RequestBody CreateOrderRequest bodyRequest){
+//        RestResponse<Order> restResponse = new RestResponse<>(StatusCode.CREATED);
+//        Order order = createOrder.loadDomain();
+//        log.debug("order check" + order.getOrdNm());
+//        restResponse.setResult(order);
+//
+//        return restResponse;
+//    }
 
     @GetMapping("/order")
-    public RestResponse<Order> getOrder(){
-        RestResponse<Order> restResponse = new RestResponse<>(StatusCode.OK);
-        Order order = createOrder.loadDomain();
-        log.debug("order check" + order.getOrderer());
+    public RestResponse<OrdersResponse> getOrders(){
+        RestResponse<OrdersResponse> response = new RestResponse<>(StatusCode.OK);
+        List<Order> orders = getOrder.getAllOrder();
+        OrdersResponse result = new OrdersResponse();
+        result.setOrders(orders);
+        response.setResult(result);
 
-        return restResponse;
+        return response;
+    }
+
+    @GetMapping("/order/{id}")
+    public RestResponse<OrderResponse> getOrders(@PathVariable String id){
+        RestResponse<OrderResponse> response = new RestResponse<>(StatusCode.OK);
+        Order order = getOrder.getOrder(id);
+        OrderResponse result = new OrderResponse();
+        result.setOrder(order);
+        response.setResult(result);
+
+        return response;
     }
 
     @Value("${custom.check-text}")

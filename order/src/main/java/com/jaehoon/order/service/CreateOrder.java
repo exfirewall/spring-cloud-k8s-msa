@@ -27,13 +27,13 @@ public class CreateOrder implements OrderSerivce{
 
         long seed = System.currentTimeMillis();
         Random random = new Random(seed);
-        order.setId(random.nextInt());
+        order.setOrdNo(String.valueOf(random.nextInt()));
 
         // 주문자 세팅
         int ordMemNo = 1234;
         URI uri = OrderUtils.getUri(userRepository.getUrl() + "/" + ordMemNo);
         UserResponse userResponse = userRepository.getOrdererInfo(uri, UserResponse.class);
-        order.setOrderer(userResponse.getUser());
+        order.setOrdNm(userResponse.getUser());
 
         // 상품 세팅
 
