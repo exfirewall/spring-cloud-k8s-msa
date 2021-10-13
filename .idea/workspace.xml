@@ -4,14 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e22c4fe-da90-45f8-a04a-e5dc2f385360" name="Default Changelist" comment="추가 : 범용 RestResponse 클래스 추가">
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/JdbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/OrderRepository.java" afterDir="false" />
+    <list default="true" id="9e22c4fe-da90-45f8-a04a-e5dc2f385360" name="Default Changelist" comment="추가 : getOrder, getOrders 구현">
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/d/1d1e69c794f6467585ea981d498780744aecee3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/2/322a6d223cc5bc32ad9c149962a08e0674694cf8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/1/4199fb651eb0237556dcafc47f7bf30319086324" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/59f8194600d794ef83b7860b9e569f0ab75c75dd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/8/683f0f2647bd4ce1d18816d1dad079ac5b3052dd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/9/b956968def5a9cc664023fd7d6beb3a0b578a0c2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/b/c/bc2b75b94d0cb2b161353d966719bcffcdb8f4f5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/3/d33b83fc5099fb71b091939710ec4cef7d31e2b4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/jaehoon/gatewayservice/GatewayServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/jaehoon/gatewayservice/filters/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/java/com/jaehoon/gatewayservice/filters/GlobalFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gateway-service/src/test/java/com/jaehoon/gatewayservice/GatewayServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/domain/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/service/CreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/service/CreateOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +62,15 @@
     <option name="defaultAccountId" value="d9ba5a48-c8d8-4785-8dec-fcd815e7394d" />
   </component>
   <component name="ProjectId" id="1yWxSmH7QlPStXVh1OgxdFQaP4H" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -61,7 +83,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gateway-service" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
@@ -81,6 +103,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.OrderApplication">
+    <configuration name="GatewayServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jaehoon.gatewayservice.GatewayServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="order" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jaehoon.order.OrderApplication" />
@@ -122,7 +151,8 @@
       <workItem from="1633478358293" duration="1281000" />
       <workItem from="1633480473188" duration="8521000" />
       <workItem from="1633998467237" duration="23365000" />
-      <workItem from="1634101773805" duration="2217000" />
+      <workItem from="1634101773805" duration="5686000" />
+      <workItem from="1634111308835" duration="69000" />
     </task>
     <task id="LOCAL-00001" summary="add getOrder method">
       <created>1633070806133</created>
@@ -173,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634026294547</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="추가 : getOrder, getOrders 구현">
+      <created>1634104102223</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1634104102223</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +241,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
@@ -215,6 +253,7 @@
     <MESSAGE value="add spring cloud config" />
     <MESSAGE value="add h2 db, jdbcTemplate" />
     <MESSAGE value="추가 : 범용 RestResponse 클래스 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="추가 : 범용 RestResponse 클래스 추가" />
+    <MESSAGE value="추가 : getOrder, getOrders 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="추가 : getOrder, getOrders 구현" />
   </component>
 </project>
