@@ -24,15 +24,17 @@ public class H2Runner implements ApplicationRunner {
         // URL : 계속변경됨
         // username : sa
         // password : "" (빈값)
-        Connection connection = dataSource.getConnection();
-        System.out.println(connection.getMetaData().getURL());
-        System.out.println(connection.getMetaData().getUserName());
 
-        // 기본 JDBC 로 SQL 연결 > 테이블 생성 > SQL 닫기
-        Statement statement = connection.createStatement();
-        String sql = "CREATE TABLE PRODUCT_TB ( prd_no NUMBER NOT NULL, prd_nm VARCHAR(60), std_cls_no NUMBER NOT NULL, prd_stat VARCHAR(100), sale_unit_cost VARCHAR(100) )";
-        statement.execute(sql);
-        connection.close();
+        try(        Connection connection = dataSource.getConnection();
+                    Statement statement = connection.createStatement();){
+            System.out.println(connection.getMetaData().getURL());
+            System.out.println(connection.getMetaData().getUserName());
+            String sql = "CREATE TABLE PRODUCT_TB ( prd_no NUMBER NOT NULL, prd_nm VARCHAR(60), std_cls_no NUMBER NOT NULL, prd_stat VARCHAR(100), sale_unit_cost VARCHAR(100) )";
+            statement.execute(sql);
+        }
+        catch (Exception e){
+
+        }
 
         // JdbcTemplate 를 쓰면 이거 한줄로 SQL 연결 > 실행 > 닫기 자동으로 된다!
         jdbcTemplate.execute("INSERT INTO PRODUCT_TB (prd_no, prd_nm, std_cls_no, prd_stat, sale_unit_cost) values ('1000000001', '태평양 신발', 50, '배송', 1000)");
