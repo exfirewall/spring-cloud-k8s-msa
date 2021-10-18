@@ -1,6 +1,6 @@
 package com.jaehoon.user.controller;
 
-import com.jaehoon.user.controller.type.ApiResponse;
+import com.jaehoon.user.controller.type.RestResponse;
 import com.jaehoon.user.model.type.StatusCode;
 import com.jaehoon.user.service.UserService;
 import org.springframework.http.MediaType;
@@ -20,9 +20,9 @@ public class UserController {
     }
 
     @GetMapping("{id}")
-    public ApiResponse<String> getUser(@PathVariable Long id) throws Exception {
+    public RestResponse<String> getUser(@PathVariable Long id) throws Exception {
         String user = userService.getUser(id);
-        ApiResponse<String> response = new ApiResponse<>(StatusCode.OK);
+        RestResponse<String> response = new RestResponse<>(StatusCode.OK);
         response.setResult(user);
         return response;
     }

@@ -48,7 +48,7 @@ public class OrderController {
     }
 
     @GetMapping("/order/{id}")
-    public RestResponse<OrderResponse> getOrders(@PathVariable String id){
+    public RestResponse<OrderResponse> getOrder(@PathVariable String id){
         RestResponse<OrderResponse> response = new RestResponse<>(StatusCode.OK);
         Order order = getOrder.getOrder(id);
         OrderResponse result = new OrderResponse();

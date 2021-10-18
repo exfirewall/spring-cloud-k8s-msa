@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: api-user
+  cloud:
+    config:
+      uri: http://localhost:8888
+  config:
+    import: "optional:configserver:http://localhost:8888"
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+  sql:
+    init:
+      mode: always
