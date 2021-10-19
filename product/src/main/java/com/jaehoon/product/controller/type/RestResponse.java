@@ -18,5 +18,7 @@ public class RestResponse<T extends Serializable> {
         this.resultCode = code.getCode();
         this.resultMessage = code.getMessage();
     }
+
+
 }
 
