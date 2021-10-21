@@ -17,6 +17,6 @@ public class ProductRequest implements Serializable {
 
     @Override
     public String toString(){
-        return "prdNo : " +  prdNo + "prdNm : " + prdNm;
+        return "prdNo : " +  prdNo + " prdNm : " + prdNm + " stdClsNo : " + stdClsNo + " prdStat : " + prdNo + " unitCost : " + unitCost;
     }
 }

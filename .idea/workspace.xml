@@ -4,16 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e22c4fe-da90-45f8-a04a-e5dc2f385360" name="Default Changelist" comment="수정 : Jdbctemplate try-catch 적용">
-      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/model/value/ProductRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/service/AddProduct.java" afterDir="false" />
+    <list default="true" id="9e22c4fe-da90-45f8-a04a-e5dc2f385360" name="Default Changelist" comment="추가 : 상품 추가 api">
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/value/ProductDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/value/ProductResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/2/9/292be4ac15036c931d93b9d324332c33eb1f4220" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/4/7/478be3ec70080599c61bdb41eccce21b86d1e964" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/9/59f8194600d794ef83b7860b9e569f0ab75c75dd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/6/e630807439388ed1b55343501c2cebe175c44e05" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/controller/type/RestResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/controller/type/RestResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/model/domain/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/model/domain/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/repository/JdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/repository/JdbcRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/H2Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/H2Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/model/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/service/CreateOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/order/src/main/java/com/jaehoon/order/service/CreateOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/H2Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/H2Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/model/value/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/product/src/main/java/com/jaehoon/product/model/value/ProductRequest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,14 +93,16 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.OrderApplication">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -150,7 +160,8 @@
       <workItem from="1634111481039" duration="4094000" />
       <workItem from="1634530977087" duration="15001000" />
       <workItem from="1634603130445" duration="2832000" />
-      <workItem from="1634620597433" duration="3935000" />
+      <workItem from="1634620597433" duration="5078000" />
+      <workItem from="1634779661684" duration="12024000" />
     </task>
     <task id="LOCAL-00001" summary="add getOrder method">
       <created>1633070806133</created>
@@ -229,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634542884755</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="추가 : 상품 추가 api">
+      <created>1634624896360</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1634624896360</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,6 +294,7 @@
     <MESSAGE value="추가 : spring-gateway 모듈 추가" />
     <MESSAGE value="추가 : getProduct 서비스" />
     <MESSAGE value="수정 : Jdbctemplate try-catch 적용" />
-    <option name="LAST_COMMIT_MESSAGE" value="수정 : Jdbctemplate try-catch 적용" />
+    <MESSAGE value="추가 : 상품 추가 api" />
+    <option name="LAST_COMMIT_MESSAGE" value="추가 : 상품 추가 api" />
   </component>
 </project>
