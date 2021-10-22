@@ -19,13 +19,23 @@ public class ProductController {
     @Autowired
     private AddProduct addProduct;
 
+//    @GetMapping("{id}")
+//    public RestResponse<ProductResponse> getProduct(@PathVariable Integer id){
+//        RestResponse<ProductResponse> response = new RestResponse<>(StatusCode.OK);
+//        //Product product = getProduct.getProduct(id);
+//        Product product = new Product(1000000001, "choi", 40, "전시", "1000");
+//        ProductResponse result = new ProductResponse();
+//        result.setProduct(product);
+//        response.setResult(result);
+//
+//        return response;
+//    }
+
     @GetMapping("{id}")
-    public RestResponse<ProductResponse> getProduct(@PathVariable Integer id){
-        RestResponse<ProductResponse> response = new RestResponse<>(StatusCode.OK);
+    public RestResponse<Product> getProduct(@PathVariable Integer id){
+        RestResponse<Product> response = new RestResponse<>(StatusCode.OK);
         Product product = getProduct.getProduct(id);
-        ProductResponse result = new ProductResponse();
-        result.setProduct(product);
-        response.setResult(result);
+        response.setResult(product);
 
         return response;
     }
